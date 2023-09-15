@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true, // 是否开启所有严格检查
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"] // 指定ts文件用到的库
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
+
+/*
+    include:指定需要被编译的目录
+    exclude:指定不需要被编译的目录
+    extend:继承配置
+    files:指定需要被编译的文件的列表
+    compilerOptions:编译器的选项
+
+    路径：**表示任意目录
+          *表示任意文件
+    */
